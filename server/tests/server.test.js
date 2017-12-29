@@ -168,7 +168,6 @@ describe('PATCH /todos/:id', () => {
                 expect(res.body.todo.completedAt).toBeA('number');
             })
             .end(done);
-
     });
 
     it('should clear completedAt when todo is not completed', done => {
