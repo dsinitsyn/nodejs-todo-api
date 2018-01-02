@@ -192,8 +192,6 @@ describe('GET /user/me', () => {
                 expect(res.body.email).toBe(users[0].email);
             })
             .end(done);
-
-        done();
     });
 
     it('should return 401 if not auth', (done) => {
